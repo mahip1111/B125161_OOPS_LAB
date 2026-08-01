@@ -20,7 +20,7 @@ Classes • Objects • Constructors • Destructors • Inheritance • Polymor
 
 # 📖 About This Repository
 
-This repository contains all the **Object Oriented Programming (OOP) Lab programs** implemented in **C++**.
+This repository contains all the **Object Oriented Programming (OOP) Lab programs** implemented in **C++** and **C**
 
 The goal of this repository is to maintain all laboratory assignments in one place while practicing core OOP concepts in a structured manner.
 
@@ -66,24 +66,13 @@ OOP-Lab/
 
 # 🧑‍💻 Lab Progress
 
-| Lab    | Topic                      | Status |
-| ------ | -------------------------- | :----: |
-| Lab 01 | Introduction to C++        |    ⏳   |
-| Lab 02 | Classes & Objects          |    ⏳   |
-| Lab 03 | Constructors & Destructors |    ⏳   |
-| Lab 04 | Function Overloading       |    ⏳   |
-| Lab 05 | Operator Overloading       |    ⏳   |
-| Lab 06 | Inheritance                |    ⏳   |
-| Lab 07 | Polymorphism               |    ⏳   |
-| Lab 08 | File Handling              |    ⏳   |
-| Lab 09 | Exception Handling         |    ⏳   |
-| Lab 10 | Templates / STL            |    ⏳   |
+Will be soon updated
 
 > Replace **⏳** with **✅** after completing each lab.
 
 ---
 
-# 📚 OOP Concepts Included
+# 📚 OOP Concepts Included ( all the concepts will be updated soon)
 
 * ✅ Classes & Objects
 * ✅ Constructors
