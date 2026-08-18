@@ -12,7 +12,7 @@ int main() {
         cin>> arr[i];
         sum+=arr[i];
     }
-    int avg = sum/n;   // see if here you want ki avg float ho toh float data type sa kuch nahi hoga tumha sum ya n ma sa kisi ek ko float banana hoga
+    int avg = (float)sum/n;   // see if here you want ki avg float ho toh float data type sa kuch nahi hoga tumha sum ya n ma sa kisi ek ko float banana hoga
     cout<<"The sum of all the elements of the array is:"<<sum<<endl;
     cout<<"The avg of all the elements of the array is:"<<avg;
     delete []arr;

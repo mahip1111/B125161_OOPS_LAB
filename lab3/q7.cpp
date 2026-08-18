@@ -39,7 +39,7 @@ int main() {
     }
 
     delete[] matrix;
-    matrix = nullptr;
+    matrix = nullptr;  // to avoid the dandgling pointer
 
     return 0;
 }
