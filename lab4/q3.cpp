@@ -1,4 +1,4 @@
-// arking Slot
+// Parking Slot
 // Create a class named ParkingSlot containing the following private data members:
 // • Slot Number
 // • Vehicle Number

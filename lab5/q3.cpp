@@ -40,16 +40,44 @@ public:
 int main() {
     ArrayTotal totalCalculator;
 
-    // Test with integer array
-    int intArray[] = {1, 2, 3, 4, 5};
-    cout << "Total of integer array: " << totalCalculator.calculateTotal(intArray, 5) << endl;
+    int intSize;
+    cout << "Enter size of integer array: ";
+    cin >> intSize;
 
-    // Test with floating-point array
-    float floatArray[] = {1.5f, 2.5f, 3.5f, 4.5f, 5.5f};
-    cout << "Total of floating-point array: " << totalCalculator.calculateTotal(floatArray, 5) << endl;
+    int *intArray = new int[intSize];
+    cout << "Enter " << intSize << " integer values:\n";
+    for (int i = 0; i < intSize; i++) {
+        cin >> intArray[i];
+    }
 
-    // Test with a portion of an integer array
-    cout << "Total of a portion of the integer array: " << totalCalculator.calculateTotal(intArray, 1, 4) << endl;
+    int floatSize;
+    cout << "Enter size of floating-point array: ";
+    cin >> floatSize;
+
+    float *floatArray = new float[floatSize];
+    cout << "Enter " << floatSize << " floating-point values:\n";
+    for (int i = 0; i < floatSize; i++) {
+        cin >> floatArray[i];
+    }
+
+    int start, end;
+    cout << "Enter the start and end index for integer portion: ";
+    cin >> start >> end;
+
+    if (start < 0 || end > intSize || start > end) {
+        cout << "Invalid range!" << endl;
+        delete[] intArray;
+        delete[] floatArray;
+        return 1;
+    }
+
+    cout << "Total of integer array: " << totalCalculator.calculateTotal(intArray, intSize) << endl;
+    cout << "Total of floating-point array: " << totalCalculator.calculateTotal(floatArray, floatSize) << endl;
+    cout << "Total of the selected portion of integer array: "
+         << totalCalculator.calculateTotal(intArray, start, end) << endl;
+
+    delete[] intArray;
+    delete[] floatArray;
 
     return 0;
 }

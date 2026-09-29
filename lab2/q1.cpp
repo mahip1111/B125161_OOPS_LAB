@@ -3,10 +3,12 @@ using namespace std;
 
 class student{
 
-    public:
+    private:
     int roll;
     string name;
     int marks;
+
+    public:
 
     void input(){
         cout<<"Enter the roll number";
@@ -30,4 +32,3 @@ int main() {
     return 0;
 }
 
-// just tell me agar muja methods ko use karna hai toh acess specifier use karna hi hoga kya nahi toh error show hoga kya

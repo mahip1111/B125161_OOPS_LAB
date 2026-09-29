@@ -3,11 +3,13 @@ using namespace std;
 
 class rectangle{
 
-    public:
+    private:
     int length;
     int breadth;
     int area;
     int perimeter;
+
+    public:
 
     void read(){
         cout<<"Enter the dimensions:"<<endl;
@@ -19,7 +21,7 @@ class rectangle{
     }
 
     void perimeter(){
-        perimeter = 2*(length*breadth);
+        perimeter = 2*(length+breadth);
     }
 
     void display(){
