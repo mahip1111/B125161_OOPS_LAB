@@ -38,5 +38,3 @@ int main() {
     b1.details();
     return 0;
 }
-
-// note: by default all the things are private methods and state both

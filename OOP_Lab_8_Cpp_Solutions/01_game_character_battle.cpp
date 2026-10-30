@@ -20,6 +20,7 @@ public:
         cout << "Warrior damage: " << damage << endl;
     }
 };
+
 class Archer : public Character {
 private:
     int agility;

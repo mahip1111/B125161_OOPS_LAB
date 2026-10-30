@@ -12,7 +12,7 @@ public:
 class BasicScanner : public SecurityScanner {
 public:
     void scan(int threats) override {
-        cout << "Basic scanner - threats detected: " << threats << endl;
+        cout << "Basic scanner : threats detected: " << threats << endl;
     }
 };
 
@@ -20,7 +20,7 @@ class AdvancedScanner : public SecurityScanner {
 public:
     void scan(int threats) override {
         int remaining = threats - (threats * 90 / 100);
-        cout << "Advanced scanner - threats detected: " << threats << endl;
+        cout << "Advanced scanner : threats detected: " << threats << endl;
         cout << "Threats remaining after removing 90%: " << remaining << endl;
     }
 };
